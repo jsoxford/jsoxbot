@@ -1,0 +1,25 @@
+{
+  "name": "node-irc-bot",
+  "version": "0.0.1",
+  "author": "Kevin Carmody",
+  "keywords": "irc bot",
+  "description": "A simple IRC bot",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsoxford"
+  },
+  "main": "./index",
+  "dependencies": {
+    "irc": "*",
+    "nano": "*"
+  },
+  "engines": {
+    "node": "*"  
+  }
+}
