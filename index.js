@@ -43,3 +43,8 @@ client.addListener('pm', function (from, message) {
 client.addListener('error', function(message) {
     console.log('error: ', message);
 });
+
+// to prevent server timeout
+setInterval(function() {
+    client.send('PONG', 'empty');
+}, 5*60*1000);
