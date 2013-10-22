@@ -1,7 +1,6 @@
-// setup
-var irc = require('irc');
-var config = require('./config');
-var nano = require('nano')(config.db.url);
+var irc = require('irc'),
+    config = require('./config'),
+    nano = require('nano')(config.db.url);
 
 var db = nano.use(config.db.name);
 
