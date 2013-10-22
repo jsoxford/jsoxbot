@@ -4,11 +4,8 @@ module.exports = {
         server: "irc.freenode.net",
         botNick: "jsoxbot",
     },
-    db: {
-        host: "localhost",
-        port: "5984",
-        name: "chatbot",
-        user: "admin",
-        pass: "password"        
+    db:{
+        url: 'http://admin:password@localhost:5984',
+        name: 'chatbot'
     }
 }

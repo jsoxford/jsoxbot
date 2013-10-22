@@ -1,13 +1,8 @@
 // setup
 var irc = require('irc');
 var config = require('./config');
+var nano = require('nano')(config.db.url);
 
-// this bit is snappy...
-// you'd probably want it to build a bit smarter
-// but i know what it's for :)
-dburl = 'http://'+config.db.user+':'+config.db.pass+'@'+config.db.host+':'+config.db.port;
-
-var nano = require('nano')(dburl);
 var db = nano.use(config.db.name);
 
 var client = new irc.Client(config.irc.server, config.irc.botNick, {
